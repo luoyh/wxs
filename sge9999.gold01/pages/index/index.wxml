@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index-top">
+    <image class="top-logo" src="{{app.data.wurl}}/logo02_03.png" bindload="okfn" binderror="errfn"></image>
+    <image class="top-txt" src="{{app.data.wurl}}/logo02_07.png"></image>
+    <view class="hr"></view>
+    <image class="top-tip" src="{{app.data.wurl}}/index03_03.png"></image>
+  </view>
+  <view class="index-footer">
+    <view style="">
+      <view class="open-title">开户只需准备{{wurl}}:</view>
+      <view class="open-icon clear">
+        <view class="fl open-item">
+          <image class="fl" src="{{app.data.wurl}}/index01_05.png"></image>
+          <view class="fl open-item-tip">
+            <view>身份证</view>
+            <view>Id card</view>
+          </view>
+        </view>
+        <view class="fl open-item">
+          <image class="fl" src="{{app.data.wurl}}/index01_07.png"></image>
+          <view class="fl open-item-tip">
+            <view>银行卡</view>
+            <view>Bank card</view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <button bindtap="goform" class="open-btn">马上开户</button>
+      </view>
+    </view>
+
+    <view class="copyright">
+      <view class="foot">Copyright  @2017 松赢投资有限公司 版权所有</view>
+    </view>
+  </view>
+</view>

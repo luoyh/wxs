@@ -1,0 +1,18 @@
+<view class="container form">
+    <image class="top-logo" src="{{app.data.wurl}}/logo02_03.png"></image>
+    <image class="top-txt" src="{{app.data.wurl}}/logo02_07.png"></image>
+
+    <view class="mobile">
+        <input type="number" bindinput="inputFn" data-value="mobile" value="{{mobile}}" placeholder="手机号码" />
+    </view>
+    <view class="v-view">
+        <view class="code fl">
+            <input bindinput="inputFn" data-value="code" type="number" placeholder="输入验证码" />
+        </view>
+        <button bindtap="sendcode" disabled="{{codeBtnDis}}" class="code-btn fr">{{codeBtnTxt}}</button>
+    </view>
+
+    <view class="submit">
+        <button bindtap="ok">提交</button>
+    </view>
+</view>

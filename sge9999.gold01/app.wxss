@@ -1,0 +1,52 @@
+/**app.wxss**/
+page {
+  height: 100%;
+}
+
+.container {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: space-between;*/
+  padding: 0 0;
+  box-sizing: border-box;
+} 
+
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear::after {
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content:" ";
+  clear:both;
+  height:0;
+}
+.clear{ 
+  zoom: 1;
+} 
+
+.top-logo {
+  width: 61rpx;
+  height: 58rpx;
+  margin: 100rpx auto 0rpx auto;
+  display: block;
+}
+
+.top-txt {
+  width: 278rpx;
+  height: 50rpx;
+  display: block;
+  margin: 30rpx auto;
+}
